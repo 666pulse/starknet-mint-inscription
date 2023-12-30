@@ -1,0 +1,15 @@
+{
+  "name": "starknet-mint-inscription",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "mint": "ts-node main.ts"
+  },
+  "repository": "https://github.com/666pulse/starknet-mint-inscription",
+  "author": "666pulse Team",
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "starknet": "^5.24.3"
+  }
+}

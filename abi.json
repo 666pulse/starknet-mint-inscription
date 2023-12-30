@@ -1,0 +1,63 @@
+[
+  {
+    "name": "Inscription",
+    "type": "impl",
+    "interface_name": "inscription::inscription::IInscription"
+  },
+  {
+    "name": "inscription::inscription::IInscription",
+    "type": "interface",
+    "items": [
+      {
+        "name": "inscription",
+        "type": "function",
+        "inputs": [
+          {
+            "name": "ins",
+            "type": "core::array::Array::<core::felt252>"
+          },
+          {
+            "name": "to",
+            "type": "core::starknet::contract_address::ContractAddress"
+          }
+        ],
+        "outputs": [],
+        "state_mutability": "external"
+      }
+    ]
+  },
+  {
+    "kind": "struct",
+    "name": "inscription::inscription::Inscription::Ins",
+    "type": "event",
+    "members": [
+      {
+        "kind": "data",
+        "name": "ins",
+        "type": "core::array::Array::<core::felt252>"
+      },
+      {
+        "kind": "data",
+        "name": "from",
+        "type": "core::starknet::contract_address::ContractAddress"
+      },
+      {
+        "kind": "data",
+        "name": "to",
+        "type": "core::starknet::contract_address::ContractAddress"
+      }
+    ]
+  },
+  {
+    "kind": "enum",
+    "name": "inscription::inscription::Inscription::Event",
+    "type": "event",
+    "variants": [
+      {
+        "kind": "nested",
+        "name": "Ins",
+        "type": "inscription::inscription::Inscription::Ins"
+      }
+    ]
+  }
+]
